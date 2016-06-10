@@ -1,0 +1,22 @@
+    <h1>Add a Product</h1>
+  <hr />
+<form role="form">
+   <div class="row"> <div class="form-group col-xs-6 col-sm-6">
+            <input type="text" class="form-control" placeholder="Product Name" required="" autofocus="" pattern="^\d+(\.|\,)\d{2}$">
+    </div></div>
+    <div class="row"><div class="form-group col-xs-6 col-sm-6">
+        <input type="number" class="form-control" placeholder="Price" required="" pattern="^\d+(\.|\,)\d{2}$">
+    </div></div>
+	<div class="row"><div class="form-group col-xs-6 col-sm-6">
+        <select class="form-control" required="">
+			<option>Choose a Category</option>
+			<option>Mobile</option>
+			<option>Laptop</option>
+			<option>Camera</option>
+		</select>
+    </div></div>
+    <div class="row"><div class="form-group col-xs-8 col-sm-8">
+        <textarea rows="11" name="message" id="message" placeholder="Description" class="form-control" ></textarea>
+    </div></div>
+        <button class="btn btn-lg btn-primary" type="submit">Add Product</button>
+</form>

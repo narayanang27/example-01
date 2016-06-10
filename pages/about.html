@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-3" style="border:1px solid red;">
+			<div style="padding:5px; margin-top:5px; margin-bottom:5px;">
+				Description
+			</div></div>
+		<div class="col-md-9" style="border:1px solid red;">
+			<div style="float:left; margin-left:5px; padding:5px; margin-top:5px; margin-bottom:5px;">
+			Subject
+				</div>
+			</div>
+	</div>
+	<div class="row" ng-repeat="channel in ganttdata">
+		<div class="col-md-3" style="border:1px solid red;">
+			<div style="padding:5px; margin-top:5px; margin-bottom:5px;">
+				{{channel.description}}
+			</div></div>
+		<div class="col-md-9" style="border:1px solid red;">
+			<div ng-repeat="event in channel.tasks" style="float:left; background-color:#ccc; margin-left:5px; padding:5px; margin-top:5px; margin-bottom:5px;">
+			{{event.subject}} - {{event.from}}
+				</div>
+			</div>
+	</div>
+	
+</div>
